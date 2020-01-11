@@ -1,0 +1,22 @@
+{
+  "name": "underground_legions",
+  "version": "1.0.0",
+  "description": "Role-playing game with system inspired from tabletop role-playing game systems like AD&D, 3D&T, etc...",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webxteam/underground_legions.git"
+  },
+  "author": "WebxTeam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webxteam/underground_legions/issues"
+  },
+  "homepage": "https://github.com/webxteam/underground_legions#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
