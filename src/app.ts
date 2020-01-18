@@ -4,7 +4,7 @@ import * as Express from 'express';
 
 const app = Express();
 
-app.get('/', (req, res) => {
+app.get('/', (req, res): void => {
   res.send('Hello World!');
 });
 
