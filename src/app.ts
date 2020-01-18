@@ -4,8 +4,8 @@ import * as Express from 'express';
 
 const app = Express();
 
-app.get('/', (req, res): void => {
-  res.send('Hello World!');
+app.get('/health', (req, res): void => {
+  res.send('It\'s working.');
 });
 
 app.listen(4001, () => {
