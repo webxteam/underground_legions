@@ -1,0 +1,28 @@
+version: '2'
+services:
+  underground_legions:
+    image: node:12-alpine
+    container_name: underground_legions
+    build: ./
+    command: "/bin/sh -c 'cd /app && npm run start'"
+    volumes:
+      - ./:/app
+    ports:
+      - "4001:4001"
+    networks:
+      underground_legions_net:
+        ipv4_address: 172.27.0.2
+    environment:
+      NAME: LOCAL
+      NODE_ENV: development
+networks:
+  underground_legions_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.27.0.0/16
+          gateway: 172.27.0.1
+volumes:
+  appdata:
+    driver: local
