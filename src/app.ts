@@ -1,13 +1,13 @@
 'use strict';
 
 import * as Express from 'express';
+import routes from './core/middlewares/routes';
 
 const app = Express();
 
-app.get('/health', (req, res): void => {
-  res.send('It\'s working.');
-});
+// Middlewares:
+app.use(routes());
 
-app.listen(4001, () => {
-  console.log('It working on port 4001...');
+app.listen(4001, (): void => {
+  console.log('It\'s working on port 4001...');
 });
