@@ -6,7 +6,7 @@ import MainRoutes from "../routes/main/MainRoutes";
 export default (): Router => {
   const router = Router();
 
-  (new MainRoutes(router));
+  new MainRoutes(router);
 
   return router;
 };
