@@ -1,7 +1,7 @@
 'use strict';
 
 import Routes from "../Routes";
-import { Request, Response, NextFunction } from "express";
+import { Request, Response } from "express";
 
 class MainRoutes extends Routes {
   protected generateRoutes(): void {
@@ -12,7 +12,7 @@ class MainRoutes extends Routes {
     this.router.get('/health', (req: Request, res: Response): void => {
       res.send('It\'s working.');
     });
-  };
+  }
 }
 
 export default MainRoutes;
