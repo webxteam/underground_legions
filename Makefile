@@ -13,3 +13,7 @@ up:
 .PHONY: down
 down:
 	docker-compose down
+
+.PHONY: style-check
+style-check:
+	docker exec underground_legions ./node_modules/.bin/eslint . --ext .ts

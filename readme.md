@@ -31,3 +31,10 @@ Execute this command to generate the compiled app:
 ```
 make build-production-app
 ```
+
+**Style check (eslint):**
+
+You can check if there are some problem with syntax and style running this command:
+```
+make style-check
+```
