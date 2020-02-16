@@ -10,11 +10,11 @@ Firstly it's necessary to configure an environment to run this application, so p
 
 1. On project main directory, run this:
 ```
-npm i
+make build
 ```
 3. Start the docker environment (services):
 ```
-docker-compose up -d
+make start
 ```
 5. Check if is working accessing this address with your browser:
 > localhost:4001/health
