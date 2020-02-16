@@ -4,7 +4,7 @@ services:
     image: node:12-alpine
     container_name: underground_legions
     build: ./
-    command: "/bin/sh -c 'cd /app && npm run start'"
+    command: "/bin/sh -c 'cd /app && npm i && npm run start'"
     volumes:
       - ./:/app
     ports:

@@ -5,5 +5,3 @@ WORKDIR /app
 COPY . .
 
 RUN npm i -g typescript ts-node
-
-RUN npm i
