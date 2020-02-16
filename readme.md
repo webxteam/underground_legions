@@ -18,3 +18,16 @@ make start
 ```
 5. Check if is working accessing this address with your browser:
 > localhost:4001/health
+
+6. You can finish and turn off the container with this command:
+```
+make down
+```
+
+**Compiled app:**
+
+It's possible to generate the compiled app that will be executed by native node.
+Execute this command to generate the compiled app:
+```
+make build-production-app
+```
