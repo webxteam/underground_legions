@@ -4,11 +4,9 @@
   "description": "Role-playing game with system inspired from tabletop role-playing game systems like AD&D, 3D&T, etc...",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build-production": "tsc -c",
-    "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/app.ts",
-    "start": "npm run watch-server",
-    "prod": "node dist/app.js"
+    "watch-server": "nodemon --watch 'src/**/*' -e ts --exec 'ts-node' ./src/app.ts",
+    "start": "npm run watch-server"
   },
   "repository": {
     "type": "git",
